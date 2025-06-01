@@ -55,9 +55,9 @@ h1 {
 }
 
 .guess-form input[type="text"] {
-    padding: 12px;
-    font-size: 1.1rem;
-    width: 60px;
+    padding: 14px; /* Increased padding */
+    font-size: 1.5rem; /* Slightly larger text */
+    width: 100px; /* Increased width */
     text-align: center;
     border: 2px solid #ffaa00;
     border-radius: 8px;

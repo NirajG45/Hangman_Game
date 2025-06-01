@@ -1,54 +1,78 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
+    background: #1e1e2f;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
-    margin-top: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 400px;
-    margin: auto;
-    background: #fff;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+}
+
+.game-box {
+    background: #2c2c3e;
+    border-radius: 15px;
+    display: inline-block;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    max-width: 90%;
 }
 
 .word {
-    font-size: 32px;
+    font-size: 2rem;
     letter-spacing: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-input {
+.attempts, .guessed, .message {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.guess-form input[type="text"] {
     padding: 10px;
-    font-size: 18px;
-    width: 50px;
+    font-size: 1.1rem;
+    width: 60px;
     text-align: center;
-}
-
-button, .btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
+    border-radius: 5px;
     border: none;
-    border-radius: 6px;
+}
+
+.guess-form button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
-.message {
-    font-weight: bold;
-    color: #555;
-    margin-top: 10px;
+.guess-form button:hover {
+    background-color: #ffaa00;
 }
 
-a {
-    color: #4CAF50;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
+    transition: background 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.btn:hover {
+    background-color: #218838;
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Hangman</h1>
+        <p class="word">{{ ' '.join(display) }}</p>
+        <p>Attempts Left: {{ attempts }}</p>
+        <p>Guessed Letters: {{ ', '.join(guessed) }}</p>
+        <p class="message">{{ message }}</p>
+
+        {% if not game_over %}
+        <form action="/guess" method="POST">
+            <input type="text" name="letter" maxlength="1" required>
+            <button type="submit">Guess</button>
+        </form>
+        {% else %}
+        <a href="/restart" class="btn">Play Again</a>
+        {% endif %}
+    </div>
+</body>
+</html>
